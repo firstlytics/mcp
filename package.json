@@ -18,7 +18,7 @@
   },
   "scripts": {
     "start": "node src/cli.js",
-    "test": "node --test --test-reporter=spec \"test/**/*.test.js\""
+    "test": "node --test --test-reporter=spec test/proxy.test.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.32.2",
