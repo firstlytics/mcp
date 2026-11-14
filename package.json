@@ -1,0 +1,54 @@
+{
+  "name": "@firstlytics/mcp",
+  "version": "1.0.0",
+  "description": "The Firstlytics MCP server: ask Claude, Cursor and other AI assistants about your web and product analytics, with an organisation API key.",
+  "mcpName": "io.github.firstlytics/mcp",
+  "type": "module",
+  "bin": {
+    "firstlytics-mcp": "src/cli.js"
+  },
+  "exports": "./src/proxy.js",
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test --test-reporter=spec \"test/**/*.test.js\""
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "zod": "^4.1.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "mcp-server",
+    "analytics",
+    "web-analytics",
+    "product-analytics",
+    "privacy",
+    "cookieless",
+    "firstlytics",
+    "claude",
+    "cursor"
+  ],
+  "homepage": "https://firstlytics.com/docs/settings/mcp-server/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firstlytics/mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/firstlytics/mcp/issues"
+  },
+  "author": "FunFirst s.r.o. <support@firstlytics.com> (https://firstlytics.com)",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
